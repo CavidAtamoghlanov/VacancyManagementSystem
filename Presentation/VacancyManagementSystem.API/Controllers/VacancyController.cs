@@ -37,8 +37,8 @@ public class VacancyController : ControllerBase
         return Ok(response);
     }
 
+    [Authorize]
     [HttpGet("[action]")]
-    [Authorize()]
     public async Task<IActionResult> GetVacancies()
     {
         var response = await _vacancyService.GetVacanciesAsync();

@@ -385,8 +385,8 @@ namespace VacancyManagementSystem.Persistence.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "CreatedDate", "IsDeleted", "ModifiedDate", "Name", "NormalizedName", "Role" },
                 values: new object[,]
                 {
-                    { 1, null, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2192), false, null, "Admin", null, "Administrator" },
-                    { 2, null, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2198), false, null, "User", null, "User" }
+                    { 1, null, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(1772), false, null, "Admin", null, "Administrator" },
+                    { 2, null, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(1776), false, null, "User", null, "User" }
                 });
 
             migrationBuilder.InsertData(
@@ -394,8 +394,8 @@ namespace VacancyManagementSystem.Persistence.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "CreatedDate", "Email", "EmailConfirmed", "FirstName", "IsDeleted", "LastName", "LockoutEnabled", "LockoutEnd", "ModifiedDate", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { 1, 0, "7686a339-77d3-4a17-81f5-4ce2757c66f7", new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2519), null, false, "Admin", false, "User", false, null, null, null, null, null, "1234567890", false, null, false, "admin@domain.com" },
-                    { 2, 0, "28c16ea8-6e62-42ef-a000-5052c3a33c11", new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2527), null, false, "John", false, "Doe", false, null, null, null, null, null, "0987654321", false, null, false, "user@domain.com" }
+                    { 1, 0, "1ef9c9c2-093e-4eac-be75-a59b58bcab4e", new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2229), null, false, "Admin", false, "User", false, null, null, null, null, null, "1234567890", false, null, false, "admin@domain.com" },
+                    { 2, 0, "bc74af40-e1d2-426b-9527-a29482ead473", new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2238), null, false, "John", false, "Doe", false, null, null, null, null, null, "0987654321", false, null, false, "user@domain.com" }
                 });
 
             migrationBuilder.InsertData(
@@ -403,8 +403,8 @@ namespace VacancyManagementSystem.Persistence.Migrations
                 columns: new[] { "Id", "CreatedDate", "Description", "IsDeleted", "ModifiedDate", "Name" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2581), "Software Development Jobs", false, null, "Software" },
-                    { 2, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2585), "Marketing Jobs", false, null, "Marketing" }
+                    { 1, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2286), "Software Development Jobs", false, null, "Software" },
+                    { 2, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2294), "Marketing Jobs", false, null, "Marketing" }
                 });
 
             migrationBuilder.InsertData(
@@ -412,8 +412,8 @@ namespace VacancyManagementSystem.Persistence.Migrations
                 columns: new[] { "Id", "CategoryId", "CreatedDate", "IsDeleted", "ModifiedDate", "QuestionText" },
                 values: new object[,]
                 {
-                    { 1, 1, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2695), false, null, "What is C#?" },
-                    { 2, 2, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2698), false, null, "What is Marketing?" }
+                    { 1, 1, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2407), false, null, "What is C#?" },
+                    { 2, 2, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2411), false, null, "What is Marketing?" }
                 });
 
             migrationBuilder.InsertData(
@@ -421,8 +421,8 @@ namespace VacancyManagementSystem.Persistence.Migrations
                 columns: new[] { "Id", "CategoryId", "CreatedDate", "Description", "EndDate", "IsActive", "IsDeleted", "ModifiedDate", "QuestionCount", "StartDate", "Title" },
                 values: new object[,]
                 {
-                    { 1, 1, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2630), "Developing software solutions", new DateTime(2025, 1, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2635), true, false, null, 5, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2634), "Software Engineer" },
-                    { 2, 2, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2648), "Creating marketing campaigns", new DateTime(2025, 1, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2651), true, false, null, 4, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2650), "Marketing Specialist" }
+                    { 1, 1, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2342), "Developing software solutions", new DateTime(2025, 1, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2347), true, false, null, 5, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2345), "Software Engineer" },
+                    { 2, 2, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2358), "Creating marketing campaigns", new DateTime(2025, 1, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2361), true, false, null, 4, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2360), "Marketing Specialist" }
                 });
 
             migrationBuilder.InsertData(
@@ -430,10 +430,10 @@ namespace VacancyManagementSystem.Persistence.Migrations
                 columns: new[] { "Id", "CreatedDate", "IsCorrect", "IsDeleted", "ModifiedDate", "OptionText", "QuestionBankId" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2746), true, false, null, "Programming Language", 1 },
-                    { 2, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2749), false, false, null, "A Framework", 1 },
-                    { 3, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2752), true, false, null, "Field of Business", 2 },
-                    { 4, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2754), false, false, null, "A Programming Language", 2 }
+                    { 1, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2458), true, false, null, "Programming Language", 1 },
+                    { 2, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2462), false, false, null, "A Framework", 1 },
+                    { 3, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2465), true, false, null, "Field of Business", 2 },
+                    { 4, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2468), false, false, null, "A Programming Language", 2 }
                 });
 
             migrationBuilder.InsertData(
@@ -441,8 +441,8 @@ namespace VacancyManagementSystem.Persistence.Migrations
                 columns: new[] { "Id", "CVPath", "CreatedDate", "Email", "FirstName", "IsDeleted", "LastName", "ModifiedDate", "PhoneNumber", "TestScore", "UserId", "VacancyId" },
                 values: new object[,]
                 {
-                    { 1, "jane.pdf", new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2832), "jane@domain.com", "Jane", false, "Doe", null, "1112223333", 85.0, 1, 1 },
-                    { 2, "mark.pdf", new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2837), "mark@domain.com", "Mark", false, "Smith", null, "4445556666", 90.0, 2, 2 }
+                    { 1, "jane.pdf", new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2554), "jane@domain.com", "Jane", false, "Doe", null, "1112223333", 85.0, 1, 1 },
+                    { 2, "mark.pdf", new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2561), "mark@domain.com", "Mark", false, "Smith", null, "4445556666", 90.0, 2, 2 }
                 });
 
             migrationBuilder.InsertData(
@@ -450,8 +450,8 @@ namespace VacancyManagementSystem.Persistence.Migrations
                 columns: new[] { "Id", "CreatedDate", "IsDeleted", "ModifiedDate", "QuestionBankId", "VacancyId" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2795), false, null, 1, 1 },
-                    { 2, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2798), false, null, 2, 2 }
+                    { 1, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2510), false, null, 1, 1 },
+                    { 2, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2514), false, null, 2, 2 }
                 });
 
             migrationBuilder.InsertData(
@@ -459,8 +459,8 @@ namespace VacancyManagementSystem.Persistence.Migrations
                 columns: new[] { "Id", "AnswerOptionId", "ApplicantId", "CreatedDate", "IsCorrect", "IsDeleted", "ModifiedDate", "VacancyQuestionId" },
                 values: new object[,]
                 {
-                    { 1, 1, 1, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2882), true, false, null, 1 },
-                    { 2, 3, 2, new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2885), true, false, null, 2 }
+                    { 1, 1, 1, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2602), true, false, null, 1 },
+                    { 2, 3, 2, new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2606), true, false, null, 2 }
                 });
 
             migrationBuilder.CreateIndex(

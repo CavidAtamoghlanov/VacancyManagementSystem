@@ -49,4 +49,10 @@ public class AuthController : ControllerBase
         var response = await _authService.ResetPasswordAsync(resetPasswordDto);
         return Ok(response);
     }
+
+    [HttpGet("[action]")]
+    public IActionResult AccessDenied()
+    {
+        return Forbid("You do not have access to this resource.");
+    }
 }

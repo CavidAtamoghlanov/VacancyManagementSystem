@@ -22,7 +22,7 @@ public static class ServiceRegistration
             options.UseSqlServer(connectionString));
 
 
-        services.AddIdentity<ApplicationUser, IdentityRole<int>>()
+        services.AddIdentity<ApplicationUser, ApplicationRole>()
                                     .AddEntityFrameworkStores<ApplicationDbContext>()
                                     .AddDefaultTokenProviders();
 

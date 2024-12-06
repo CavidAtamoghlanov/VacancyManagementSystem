@@ -13,7 +13,7 @@ public class AuthService : BaseService, IAuthService
 {
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly SignInManager<ApplicationUser> _signInManager;
-    private readonly RoleManager<IdentityRole<int>> _roleManager;
+    private readonly RoleManager<ApplicationRole> _roleManager;
     private readonly ITokenService _tokenService;
 
     public AuthService(
@@ -22,7 +22,7 @@ public class AuthService : BaseService, IAuthService
         UserManager<ApplicationUser> userManager,
         SignInManager<ApplicationUser> signInManager,
         ITokenService tokenService,
-        RoleManager<IdentityRole<int>> roleManager)
+        RoleManager<ApplicationRole> roleManager)
         : base(unitOfWork, autoMapper)
     {
         _userManager = userManager;
@@ -31,16 +31,31 @@ public class AuthService : BaseService, IAuthService
         _roleManager = roleManager;
     }
 
+
     public async Task<Response> RegisterAsync(RegisterDto registerDto)
     {
-        var existingUser = await _userManager.FindByEmailAsync(registerDto.Email);
-        if (existingUser != null)
+        if (await _userManager.FindByEmailAsync(registerDto.Email) != null)
             return Conflict("Email is already in use.");
 
         if (registerDto.Password != registerDto.ComfirmPassword)
             return BadRequest("Password and confirm password must be the same.");
 
-        var user = new ApplicationUser
+        var user = CreateUser(registerDto);
+
+        var result = await _userManager.CreateAsync(user, registerDto.Password);
+        if (!result.Succeeded)
+            return Error("Registration failed.", GetErrors(result.Errors));
+
+        await EnsureRoleExistsAsync(registerDto.Role);
+
+        await _userManager.AddToRoleAsync(user, registerDto.Role);
+
+        return Success("User registered successfully.");
+    }
+
+    private ApplicationUser CreateUser(RegisterDto registerDto)
+    {
+        return new ApplicationUser
         {
             UserName = registerDto.Email,
             Email = registerDto.Email,
@@ -48,20 +63,20 @@ public class AuthService : BaseService, IAuthService
             LastName = registerDto.LastName,
             PhoneNumber = registerDto.PhoneNumber
         };
+    }
 
-        var result = await _userManager.CreateAsync(user, registerDto.Password);
-        if (!result.Succeeded)
-            return Error("Registration failed.", string.Join(", ", result.Errors.Select(e => e.Description)));
-
-        var roleExists = await _roleManager.RoleExistsAsync(registerDto.Role);
-        if (!roleExists)
+    private async Task EnsureRoleExistsAsync(string roleName)
+    {
+        if (!await _roleManager.RoleExistsAsync(roleName))
         {
-            await _roleManager.CreateAsync(new IdentityRole<int>(registerDto.Role)); 
+            var role = new ApplicationRole(roleName);
+            await _roleManager.CreateAsync(role);
         }
+    }
 
-        await _userManager.AddToRoleAsync(user, registerDto.Role);
-
-        return Success("User registered successfully.");
+    private string GetErrors(IEnumerable<IdentityError> errors)
+    {
+        return string.Join(", ", errors.Select(e => e.Description));
     }
 
     public async Task<Response> LoginAsync(LoginDto loginDto)

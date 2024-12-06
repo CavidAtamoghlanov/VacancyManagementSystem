@@ -12,7 +12,7 @@ using VacancyManagementSystem.Persistence.Context;
 namespace VacancyManagementSystem.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241205123356_mig_1_GenerateTable_and_AddSeedData")]
+    [Migration("20241206081436_mig_1_GenerateTable_and_AddSeedData")]
     partial class mig_1_GenerateTable_and_AddSeedData
     {
         /// <inheritdoc />
@@ -184,7 +184,7 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2746),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2458),
                             IsCorrect = true,
                             IsDeleted = false,
                             OptionText = "Programming Language",
@@ -193,7 +193,7 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2749),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2462),
                             IsCorrect = false,
                             IsDeleted = false,
                             OptionText = "A Framework",
@@ -202,7 +202,7 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2752),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2465),
                             IsCorrect = true,
                             IsDeleted = false,
                             OptionText = "Field of Business",
@@ -211,7 +211,7 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2754),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2468),
                             IsCorrect = false,
                             IsDeleted = false,
                             OptionText = "A Programming Language",
@@ -283,7 +283,7 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         {
                             Id = 1,
                             CVPath = "jane.pdf",
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2832),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2554),
                             Email = "jane@domain.com",
                             FirstName = "Jane",
                             IsDeleted = false,
@@ -297,7 +297,7 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         {
                             Id = 2,
                             CVPath = "mark.pdf",
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2837),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2561),
                             Email = "mark@domain.com",
                             FirstName = "Mark",
                             IsDeleted = false,
@@ -356,7 +356,7 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2192),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(1772),
                             IsDeleted = false,
                             Name = "Admin",
                             Role = "Administrator"
@@ -364,7 +364,7 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2198),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(1776),
                             IsDeleted = false,
                             Name = "User",
                             Role = "User"
@@ -464,8 +464,8 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7686a339-77d3-4a17-81f5-4ce2757c66f7",
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2519),
+                            ConcurrencyStamp = "1ef9c9c2-093e-4eac-be75-a59b58bcab4e",
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2229),
                             EmailConfirmed = false,
                             FirstName = "Admin",
                             IsDeleted = false,
@@ -480,8 +480,8 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         {
                             Id = 2,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "28c16ea8-6e62-42ef-a000-5052c3a33c11",
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2527),
+                            ConcurrencyStamp = "bc74af40-e1d2-426b-9527-a29482ead473",
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2238),
                             EmailConfirmed = false,
                             FirstName = "John",
                             IsDeleted = false,
@@ -529,7 +529,7 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2581),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2286),
                             Description = "Software Development Jobs",
                             IsDeleted = false,
                             Name = "Software"
@@ -537,7 +537,7 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2585),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2294),
                             Description = "Marketing Jobs",
                             IsDeleted = false,
                             Name = "Marketing"
@@ -580,7 +580,7 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2695),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2407),
                             IsDeleted = false,
                             QuestionText = "What is C#?"
                         },
@@ -588,7 +588,7 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         {
                             Id = 2,
                             CategoryId = 2,
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2698),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2411),
                             IsDeleted = false,
                             QuestionText = "What is Marketing?"
                         });
@@ -639,7 +639,7 @@ namespace VacancyManagementSystem.Persistence.Migrations
                             Id = 1,
                             AnswerOptionId = 1,
                             ApplicantId = 1,
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2882),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2602),
                             IsCorrect = true,
                             IsDeleted = false,
                             VacancyQuestionId = 1
@@ -649,7 +649,7 @@ namespace VacancyManagementSystem.Persistence.Migrations
                             Id = 2,
                             AnswerOptionId = 3,
                             ApplicantId = 2,
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2885),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2606),
                             IsCorrect = true,
                             IsDeleted = false,
                             VacancyQuestionId = 2
@@ -709,26 +709,26 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2630),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2342),
                             Description = "Developing software solutions",
-                            EndDate = new DateTime(2025, 1, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2635),
+                            EndDate = new DateTime(2025, 1, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2347),
                             IsActive = true,
                             IsDeleted = false,
                             QuestionCount = 5,
-                            StartDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2634),
+                            StartDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2345),
                             Title = "Software Engineer"
                         },
                         new
                         {
                             Id = 2,
                             CategoryId = 2,
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2648),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2358),
                             Description = "Creating marketing campaigns",
-                            EndDate = new DateTime(2025, 1, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2651),
+                            EndDate = new DateTime(2025, 1, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2361),
                             IsActive = true,
                             IsDeleted = false,
                             QuestionCount = 4,
-                            StartDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2650),
+                            StartDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2360),
                             Title = "Marketing Specialist"
                         });
                 });
@@ -768,7 +768,7 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2795),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2510),
                             IsDeleted = false,
                             QuestionBankId = 1,
                             VacancyId = 1
@@ -776,7 +776,7 @@ namespace VacancyManagementSystem.Persistence.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 12, 5, 16, 33, 55, 300, DateTimeKind.Local).AddTicks(2798),
+                            CreatedDate = new DateTime(2024, 12, 6, 12, 14, 35, 510, DateTimeKind.Local).AddTicks(2514),
                             IsDeleted = false,
                             QuestionBankId = 2,
                             VacancyId = 2

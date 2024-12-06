@@ -15,7 +15,6 @@ namespace VacancyManagementSystem.Persistence.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
-
             modelBuilder.Entity<ApplicationRole>().HasData(
                 new ApplicationRole { Id = 1, Name = "Admin", Role = "Administrator", IsDeleted = false, CreatedDate = DateTime.Now },
                 new ApplicationRole { Id = 2, Name = "User", Role = "User", IsDeleted = false, CreatedDate = DateTime.Now }
@@ -114,8 +113,6 @@ namespace VacancyManagementSystem.Persistence.Context
         // DbSet-lər
         public DbSet<AnswerOption> AnswerOptions { get; set; }
         public DbSet<Applicant> Applicants { get; set; }
-        public DbSet<ApplicationRole> ApplicationRoles { get; set; }
-        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Vacancy> Vacancies { get; set; }
         public DbSet<VacancyQuestion> VacancyQuestions { get; set; }
