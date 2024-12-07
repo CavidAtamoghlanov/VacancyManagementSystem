@@ -9,15 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{C77B4C70-473D-498D-AA69-FA964D048F3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacancyManagementSystem.Domain", "Core\VacancyManagementSystem.Domain\VacancyManagementSystem.Domain.csproj", "{4D789082-0319-42BA-ADD2-B77A00B5E16C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VacancyManagementSystem.Domain", "Core\VacancyManagementSystem.Domain\VacancyManagementSystem.Domain.csproj", "{4D789082-0319-42BA-ADD2-B77A00B5E16C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacancyManagementSystem.Application", "Core\VacancyManagementSystem.Application\VacancyManagementSystem.Application.csproj", "{57A1C0D7-1118-4667-BB17-AAC60B76135A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VacancyManagementSystem.Application", "Core\VacancyManagementSystem.Application\VacancyManagementSystem.Application.csproj", "{57A1C0D7-1118-4667-BB17-AAC60B76135A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacancyManagementSystem.Persistence", "Infrastructure\VacancyManagementSystem.Persistence\VacancyManagementSystem.Persistence.csproj", "{792F81CB-ED86-4970-BB9D-0516DC2986D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VacancyManagementSystem.Persistence", "Infrastructure\VacancyManagementSystem.Persistence\VacancyManagementSystem.Persistence.csproj", "{792F81CB-ED86-4970-BB9D-0516DC2986D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacancyManagementSystem.API", "Presentation\VacancyManagementSystem.API\VacancyManagementSystem.API.csproj", "{33C36C5B-658D-4BCE-B5FC-9F9107B1A20D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VacancyManagementSystem.API", "Presentation\VacancyManagementSystem.API\VacancyManagementSystem.API.csproj", "{33C36C5B-658D-4BCE-B5FC-9F9107B1A20D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacancyManagementSystem.Infrastructure", "Infrastructure\VacancyManagementSystem.Infrastructure\VacancyManagementSystem.Infrastructure.csproj", "{980726B2-C5C8-45E4-8FB8-487C44AC7E14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VacancyManagementSystem.Infrastructure", "Infrastructure\VacancyManagementSystem.Infrastructure\VacancyManagementSystem.Infrastructure.csproj", "{980726B2-C5C8-45E4-8FB8-487C44AC7E14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacancyManagementSystem.Tests", "Infrastructure\VacancyManagementSystem.Tests\VacancyManagementSystem.Tests.csproj", "{C96A66FD-F735-4ADC-B381-B196E4C69B23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{980726B2-C5C8-45E4-8FB8-487C44AC7E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{980726B2-C5C8-45E4-8FB8-487C44AC7E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{980726B2-C5C8-45E4-8FB8-487C44AC7E14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C96A66FD-F735-4ADC-B381-B196E4C69B23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C96A66FD-F735-4ADC-B381-B196E4C69B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C96A66FD-F735-4ADC-B381-B196E4C69B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C96A66FD-F735-4ADC-B381-B196E4C69B23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{792F81CB-ED86-4970-BB9D-0516DC2986D9} = {49109B84-D9CA-4C10-8E2D-64243F3A0204}
 		{33C36C5B-658D-4BCE-B5FC-9F9107B1A20D} = {C77B4C70-473D-498D-AA69-FA964D048F3C}
 		{980726B2-C5C8-45E4-8FB8-487C44AC7E14} = {49109B84-D9CA-4C10-8E2D-64243F3A0204}
+		{C96A66FD-F735-4ADC-B381-B196E4C69B23} = {49109B84-D9CA-4C10-8E2D-64243F3A0204}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DCCBD4D3-707D-4B83-8058-789853FF56EE}
